@@ -1,0 +1,79 @@
+<div class="home-container">
+    <div class="header">
+      <h1 class="title">Demandas</h1>
+      <button class="save-button" (click)="saveData()">Salvar</button>
+      <a href="/historico" class="history-button"> Histórico</a>
+    </div>
+    <hr class="divider">
+    <div class="date-section">
+      <h2 class="subtitle">Data</h2>
+      <input type="date" class="date-input">
+    </div>
+    <hr class="divider">
+    <div class="period-section">
+      <h2 class="subtitle">Período</h2>
+      <div class="button-group">
+        <button class="period-button" [class.active]="selectedPeriod === 'manha'" (click)="selectPeriod('manha')">Manhã</button>
+        <button class="period-button" [class.active]="selectedPeriod === 'tarde'" (click)="selectPeriod('tarde')">Tarde</button>
+        <button class="period-button" [class.active]="selectedPeriod === 'noite'" (click)="selectPeriod('noite')">Noite</button>
+      </div>
+    </div>
+    <hr class="divider">
+    <div class="demands-section">
+      <h2 class="subtitle">Demandas</h2>
+      <textarea class="demands-textarea" placeholder="Digite aqui..."></textarea>
+    </div>
+    <hr class="divider">
+    <div class="impediments-section">
+      <h2 class="subtitle">Impedimentos</h2>
+      <div class="button-group">
+        <button class="impediment-button" [class.selected]="selectedImpediment === 'sim'" (click)="selectImpediment('sim')">Sim</button>
+        <button class="impediment-button" [class.selected]="selectedImpediment === 'nao'" (click)="selectImpediment('nao')">Não</button>
+      </div>
+    </div>
+    
+    <hr class="divider">
+    <div class="id-section">
+      <h2 class="subtitle">ID</h2>
+      <textarea class="id-textarea" placeholder="Digite aqui..."></textarea>
+    </div>
+    <hr class="divider">
+    <div class="demands-section">
+      <h2 class="subtitle">Observação</h2>
+      <textarea class="demands-textarea" placeholder="Digite aqui..."></textarea>
+    </div>
+    <hr class="divider">
+    <div class="demands-section">
+      <h2 class="subtitle">Status de liberação</h2>
+      <textarea class="demands-textarea" placeholder="Digite aqui..."></textarea>
+    </div>
+    <hr class="divider">
+    <div class="demands-section">
+      <h2 class="subtitle">Sistema</h2>
+      <textarea class="demands-textarea" placeholder="Digite aqui..."></textarea>
+    </div>
+  
+    
+    <!-- Rodapé -->
+   
+  <footer class="footer">
+    <div class="footer-icons">
+      <a href="/home" class="footer-icon" [class.active]="activeIcon === 'home'" (click)="setActiveIcon('home')">
+        <i class="fas fa-home"></i>
+      </a>
+      <div class="separator"></div>
+      <a href="/demandas" class="footer-icon" [class.active]="activeIcon === 'lista'" (click)="setActiveIcon('lista')">
+        <i class="fas fa-list"></i>
+      </a>
+      <div class="separator"></div>
+      <a href="/horarios" class="footer-icon" [class.active]="activeIcon === 'relogio'" (click)="setActiveIcon('relogio')">
+        <i class="fas fa-clock"></i>
+      </a>
+      <div class="separator"></div>
+      <a href="/pessoa" class="footer-icon" [class.active]="activeIcon === 'pessoa'" (click)="setActiveIcon('pessoa')">
+        <i class="fas fa-user"></i>
+      </a>
+    </div>
+  </footer>
+  </div>
+  

@@ -1,0 +1,42 @@
+.footer {
+    margin-top: auto;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    // background-color: #f8f9fa;
+  }
+  
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .footer-icon {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-icon i {
+    font-size: 24px;
+  }
+  
+  .footer-icon span {
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  
+  .footer-icon.active {
+    color: #5CC6BA; /* Cor para o ícone selecionado */
+  }
+  
+  .separator {
+    border-left: 1px solid #ddd;
+    height: 24px;
+    align-self: center;
+  }

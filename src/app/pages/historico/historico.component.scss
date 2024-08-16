@@ -1,0 +1,123 @@
+
+.historico-container {
+  padding: 20px;
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.back-button {
+  position: absolute; 
+   left: 0px; 
+   padding: 10px 20px;
+   text-decoration: none;
+   border: none;
+   border-radius: 5px;
+   font-size: 15px;
+   cursor: pointer;
+   color: white;
+   background-color: #5CC6BA
+}
+
+.back-button:hover {
+  background-color: #263A96;
+}
+
+.title {
+  font-size: 24px; /* Tamanho do título */
+  margin: 0;
+  color: #263A96;
+  flex: 1; /* Permite que o título se expanda para preencher o espaço disponível */
+  text-align: center; /* Centraliza o título no espaço restante */
+}
+
+.divider {
+  margin: 20px 0;
+  border: 1px solid #ddd;
+}
+
+.search-bar {
+  margin: 10px 0;
+}
+
+.search-bar input {
+  width: 99%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #5CC6BA;
+    border-radius: 15px;
+}
+
+.historico-list {
+  margin-top: 20px;
+}
+
+.historico-item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.historico-summary {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.historico-date, .historico-period {
+  font-size: 16px;
+}
+
+.historico-details {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  display: none; /* Oculta os detalhes por padrão */
+}
+
+
+
+// .search-bar {
+//   margin-bottom: 20px;
+// }
+
+// .search-bar input {
+//   width: 100%;
+//   padding: 10px;
+//   font-size: 16px;
+//   border: 1px solid #ccc;
+//   border-radius: 5px;
+// }
+
+// .historico-list {
+//   margin-top: 20px;
+// }
+
+// .historico-item {
+//   border-bottom: 1px solid #ddd;
+//   padding: 10px 0;
+// }
+
+// .historico-summary {
+//   display: flex;
+//   justify-content: space-between;
+//   cursor: pointer;
+// }
+
+// .historico-date, .historico-period {
+//   font-size: 16px;
+// }
+
+// .historico-details {
+//   margin-top: 10px;
+//   padding: 10px;
+//   background-color: #f9f9f9;
+//   border: 1px solid #eee;
+//   border-radius: 5px;
+//   display: none; /* Oculta os detalhes por padrão */
+// }

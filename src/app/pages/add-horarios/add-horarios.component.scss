@@ -1,0 +1,61 @@
+.add-horarios-container{
+    padding: 20px;
+    font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+  }
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .divider {
+ 
+    margin: 20px 0;
+    border: 1px solid #ddd;
+  }
+  .title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px; /*  tamanho do título  */
+    margin: 0;
+    color: #263A96;
+  }
+
+  .save-button {
+    position: absolute;
+    right: 0;
+    padding: 10px 20px;
+    border: none;
+    background-color: #5CC6BA;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 500;
+  
+  }
+  
+  .save-button:hover {
+    background-color: #263A96;
+  }
+  
+  mat-form-field.mat-form-field-appearance-fill .mat-form-field-flex {
+    background-color: #f0f0f0 !important; /* Forçar a aplicação */
+    border-radius: 10px !important; /* Forçar a aplicação */
+  }
+  
+  mat-form-field.mat-form-field-appearance-fill .mat-form-field-label {
+    color: #007bff !important; /* Forçar a aplicação */
+  }
+  
+  mat-form-field.mat-form-field-appearance-fill .mat-form-field-infix input {
+    color: #4d1111 !important; /* Forçar a aplicação */
+  }
+  
+  mat-form-field.mat-form-field-appearance-fill .mat-form-field-outline {
+    border-color: #007bff !important; /* Forçar a aplicação */
+  }
+  
+  
+  

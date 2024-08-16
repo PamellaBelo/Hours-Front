@@ -1,0 +1,20 @@
+
+<footer class="footer">
+    <div class="footer-icons">
+      <a href="/home" class="footer-icon" [class.active]="activeIcon === 'home'" (click)="setActiveIcon('home')">
+        <i class="fas fa-home"></i>
+      </a>
+      <div class="separator"></div>
+      <a href="/demandas" class="footer-icon" [class.active]="activeIcon === 'lista'" (click)="setActiveIcon('lista')">
+        <i class="fas fa-list"></i>
+      </a>
+      <div class="separator"></div>
+      <a href="/horarios" class="footer-icon" [class.active]="activeIcon === 'relogio'" (click)="setActiveIcon('relogio')">
+        <i class="fas fa-clock"></i>
+      </a>
+      <div class="separator"></div>
+      <a href="/pessoa" class="footer-icon" [class.active]="activeIcon === 'pessoa'" (click)="setActiveIcon('pessoa')">
+        <i class="fas fa-user"></i>
+      </a>
+    </div>
+  </footer>
